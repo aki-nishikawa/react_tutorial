@@ -8,5 +8,4 @@ services:
       - 8080:80
     volumes:
       - ./docker/public:/app/public:ro
-      # - ./docker/nginx/app.conf:/etc/nginx/site-vailable/app.conf:ro
       - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
