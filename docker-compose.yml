@@ -6,3 +6,6 @@ services:
     container_name: react_nginx
     ports:
       - 8080:80
+    volumes:
+      - ./docker/public:/app/public:ro
+      - ./docker/nginx/app.conf:/etc/nginx/site-vailable/app.conf:ro
