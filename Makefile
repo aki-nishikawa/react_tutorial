@@ -14,3 +14,8 @@ down:
 .PHONY: reload
 reload:
 	docker-compose restart
+
+.PHONY: restart
+restart:
+	npm run build
+	docker-compose restart
